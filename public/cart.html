@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Cart</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-base text-[#333333] font-serif flex flex-col min-h-screen">
+
+  <nav class="fixed top-0 left-0 w-full z-50 bg-[#F5F5F5] shadow-md px-8 py-4">
+    <div class="flex items-center justify-between">
+      <div class="flex-shrink-0">
+        <h1 class="text-2xl font-serif text-[#333333]">J’Aveline</h1>
+      </div>
+      <div class="flex-grow flex justify-center">
+        <ul class="flex space-x-12">
+          <li><a href="home.html" class="text-lg text-[#333333] hover:text-[#201DB6]">Home</a></li>
+          <li><a href="#" class="text-lg text-[#333333] hover:text-[#201DB6]">Shop</a></li>
+          <li><a href="#" class="text-lg text-[#333333] hover:text-[#201DB6]">About</a></li>
+        </ul>
+      </div>
+      <div class="flex items-center space-x-6">
+        <div class="relative">
+          <input
+            type="text"
+            placeholder="Search..."
+            class="bg-[#EFEFEF] text-sm text-gray-700 rounded-full pl-4 pr-10 py-2 w-[200px] focus:outline-none"
+          />
+          <img src="../public/aset/search.png" alt="Search Icon"
+            class="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 opacity-60 pointer-events-none" />
+        </div>
+        <a href="#">
+          <img src="../public/aset/profile (2).png" alt="Profile" class="w-8 h-8" />
+        </a>
+        <a href="cart.html">
+          <img src="../public/aset/cart.png" alt="Cart" class="w-8 h-8" />
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="flex-grow pt-24">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 px-4 lg:px-16">
+      <div class="lg:col-span-2 mb-6">
+        <h2 class="text-3xl font-semibold text-gray-800 mb-6">My Cart</h2>
+        <div class="hidden md:grid grid-cols-6 gap-4 text-sm font-medium text-gray-500 border-b border-gray-300 pb-2">
+          <div class="col-span-3">PRODUCT</div>
+          <div class="text-center">QTY</div>
+          <div class="text-center">PRICE</div>
+          <div class="text-right">TOTAL</div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-2" id="cartItems">
+      </div>
+      <div>
+        <div id="shoppingSummary" class="sticky top-32 w-full rounded-xl shadow-md bg-gray-100 p-6">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-[#F5F5F5] text-[#333333] py-10 px-4 md:px-8 border-t border-gray-200">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div>
+        <h2 class="text-2xl md:text-3xl font-medium mb-4">J’ Aveline</h2>
+        <p class="text-sm md:text-base max-w-xs">
+          Elevating everyday style with timeless elegance and contemporary design. Our collections are crafted with premium materials for the modern individual.
+        </p>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-black">About Us</a></li>
+          <li><a href="#" class="hover:text-black">Contact Us</a></li>
+          <li><a href="#" class="hover:text-black">Shipping & Returns</a></li>
+          <li><a href="#" class="hover:text-black">FAQs</a></li>
+          <li><a href="#" class="hover:text-black">Privacy Policy</a></li>
+          <li><a href="#" class="hover:text-black">Terms & Conditions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+        <div class="space-y-3 text-sm">
+          <div class="flex items-start">
+            <img src="../public/aset/locate.png" alt="Location" class="w-5 h-5 mt-1 mr-2" />
+            <p>139St, New York, NY132009, USA</p>
+          </div>
+          <div class="flex items-center">
+            <img src="../public/aset/call.png" alt="Phone" class="w-5 h-5 mr-2" />
+            <p>+1 (212) 132-0093</p>
+          </div>
+          <div class="flex items-center">
+            <img src="../public/aset/mail.png" alt="Email" class="w-5 h-5 mr-2" />
+            <p>contact@javeline.com</p>
+          </div>
+          <div class="flex space-x-4 mt-3">
+            <a href="#"><img src="../public/aset/instagram (1).png" alt="Instagram" class="w-6 h-6" /></a>
+            <a href="#"><img src="../public/aset/facebook (1).png" alt="Facebook" class="w-6 h-6" /></a>
+            <a href="#"><img src="../public/aset/twitter (3).png" alt="Twitter/X" class="w-6 h-6" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center justify-center lg:justify-end">
+        <div class="flex flex-col space-y-4 ml-4">
+          <img src="../public/aset/mastercard.png" alt="Mastercard" class="w-14 h-14 object-contain" />
+          <img src="../public/aset/paypal.png" alt="PayPal" class="w-14 h-14 object-contain" />
+          <img src="../public/aset/visa.png" alt="Visa" class="w-14 h-14 object-contain" />
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="cart.js"></script>
+</body>
+</html>

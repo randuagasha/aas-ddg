@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" class="font-serif text-text">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout – J’Aveline</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+<body class="bg-base">
+
+<nav class="fixed top-0 left-0 w-full z-50 bg-[#F5F5F5] shadow-md px-8 py-4">
+  <div class="flex items-center justify-between">
+    <div class="flex-shrink-0">
+      <h1 class="text-2xl font-serif text-[#333333]">J’Aveline</h1>
+    </div>
+    <div class="flex-grow flex justify-center">
+      <ul class="flex space-x-12">
+        <li><a href="home.html" class="text-lg text-[#333333] hover:text-[#201DB6]">Home</a></li>
+        <li><a href="#" class="text-lg text-[#333333] hover:text-[#201DB6]">Shop</a></li>
+        <li><a href="#" class="text-lg text-[#333333] hover:text-[#201DB6]">About</a></li>
+      </ul>
+    </div>
+    <div class="flex items-center space-x-6">
+      <div class="relative">
+        <input
+          type="text"
+          placeholder="Search..."
+          class="bg-[#EFEFEF] text-sm text-gray-700 rounded-full pl-4 pr-10 py-2 w-[200px] focus:outline-none"
+          />
+        <img src="../public/aset/search.png" alt="Search Icon"
+          class="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 opacity-60 pointer-events-none" />
+      </div>
+      <a href="#">
+        <img src="../public/aset/profile (2).png" alt="Profile" class="w-8 h-8" />
+      </a>
+      <a href="cart.html">
+        <img src="../public/aset/cart.png" alt="Cart" class="w-8 h-8" />
+      </a>
+    </div>
+  </div>
+</nav>
+
+
+<main class="max-w-6xl mx-auto px-4 py-12 grid lg:grid-cols-2 gap-10 font-serif">
+      <div class="space-y-10">
+        <section class="bg-card rounded-xl shadow p-6">
+          <h2 class="text-2xl font-semibold mb-6">Items</h2>
+          <div id="checkoutItemsContainer" class="space-y-8"></div>
+        </section>
+        <section class="bg-card rounded-xl shadow p-6">
+          <h2 class="text-2xl font-semibold mb-6">Payment Method</h2>
+          <form id="paymentForm" class="space-y-6">
+            <label class="flex items-center gap-4">
+              <input type="radio" name="paymentMethod" value="mastercard" class="w-5 h-5 accent-black" />
+              <img src="./aset/mastercard.png" alt="MasterCard" class="w-14 object-contain" />
+            </label>
+            <label class="flex items-center gap-4">
+              <input type="radio" name="paymentMethod" value="paypal" class="w-5 h-5 accent-black" />
+              <img src="./aset/paypal.png" alt="PayPal" class="w-20 object-contain" />
+            </label>
+            <label class="flex items-center gap-4">
+              <input type="radio" name="paymentMethod" value="visa" class="w-5 h-5 accent-black" />
+              <img src="./aset/visa.png" alt="Visa" class="w-16 object-contain" />
+            </label>
+          </form>
+        </section>
+      </div>
+      <div class="space-y-10">
+        <section class="bg-card rounded-xl shadow p-6">
+          <h2 class="text-2xl font-semibold mb-6">Shopping Information</h2>
+          <form id="shippingForm" class="grid grid-cols-2 gap-4">
+            <input id="firstName" placeholder="First Name" class="col-span-1 w-full bg-search px-3 py-2 rounded placeholder-gray-500 text-sm focus:outline-none" required />
+            <input id="lastName" placeholder="Last Name" class="col-span-1 w-full bg-search px-3 py-2 rounded placeholder-gray-500 text-sm focus:outline-none" required />
+            <input id="address" placeholder="Address" class="col-span-2 w-full bg-search px-3 py-2 rounded placeholder-gray-500 text-sm focus:outline-none" required />
+            <input id="phone" placeholder="Ph Number" class="col-span-1 w-full bg-search px-3 py-2 rounded placeholder-gray-500 text-sm focus:outline-none" required />
+            <input id="email" type="email" placeholder="Gmail" class="col-span-1 w-full bg-search px-3 py-2 rounded placeholder-gray-500 text-sm focus:outline-none" required />
+          </form>
+        </section>
+        <section class="bg-card rounded-xl shadow p-6">
+          <h2 class="text-2xl font-semibold mb-6">Summary</h2>
+          <div class="flex justify-between mb-2">
+            <span>Subtotal</span>
+            <span id="subtotal">$0.00</span>
+          </div>
+          <div class="flex justify-between mb-2">
+            <span>Shipping</span>
+            <span>Free</span>
+          </div>
+          <div class="flex justify-between font-semibold text-lg border-t pt-3 mb-6">
+            <span>Total</span>
+            <span id="total">$0.00</span>
+          </div>
+          <button id="checkoutBtn" class="w-full bg-[#110064] hover:bg-[#0d004f] text-white py-2 rounded-md transition">
+            Buy Now
+          </button>
+        </section>
+      </div>
+</main>
+
+<footer class="bg-[#F5F5F5] text-[#333333] py-10 px-4 md:px-8 border-t border-gray-200">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div>
+      <h2 class="text-2xl md:text-3xl font-medium mb-4">J’ Aveline</h2>
+      <p class="text-sm md:text-base max-w-xs">
+        Elevating everyday style with timeless elegance and contemporary design. Our collections are crafted with premium materials for the modern individual.
+      </p>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-black">About Us</a></li>
+        <li><a href="#" class="hover:text-black">Contact Us</a></li>
+        <li><a href="#" class="hover:text-black">Shipping & Returns</a></li>
+        <li><a href="#" class="hover:text-black">FAQs</a></li>
+        <li><a href="#" class="hover:text-black">Privacy Policy</a></li>
+        <li><a href="#" class="hover:text-black">Terms & Conditions</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+      <div class="space-y-3 text-sm">
+        <div class="flex items-start">
+          <img src="../public/aset/locate.png" alt="Location" class="w-5 h-5 mt-1 mr-2" />
+          <p>139St, New York, NY132009, USA</p>
+        </div>
+        <div class="flex items-center">
+          <img src="../public/aset/call.png" alt="Phone" class="w-5 h-5 mr-2" />
+          <p>+1 (212) 132-0093</p>
+        </div>
+        <div class="flex items-center">
+          <img src="../public/aset/mail.png" alt="Email" class="w-5 h-5 mr-2" />
+          <p>contact@javeline.com</p>
+        </div>
+        <div class="flex space-x-4 mt-3">
+          <a href="#"><img src="../public/aset/instagram (1).png" alt="Instagram" class="w-6 h-6" /></a>
+          <a href="#"><img src="../public/aset/facebook (1).png" alt="Facebook" class="w-6 h-6" /></a>
+          <a href="#"><img src="../public/aset/twitter (3).png" alt="Twitter/X" class="w-6 h-6" /></a>
+        </div>
+      </div>
+    </div>
+    <div class="flex items-center justify-center lg:justify-end">
+      <div class="flex flex-col space-y-4 ml-4">
+        <img src="../public/aset/mastercard.png" alt="Mastercard" class="w-14 h-14 object-contain" />
+        <img src="../public/aset/paypal.png" alt="PayPal" class="w-14 h-14 object-contain" />
+        <img src="../public/aset/visa.png" alt="Visa" class="w-14 h-14 object-contain" />
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="checkout.js"></script>
+  </body>
+</html>

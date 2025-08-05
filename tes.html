@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RND Luxury Cars - Premium Car Dealership in Indonesia</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#C0A080", secondary: "#333333" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      body {
+          font-family: 'Montserrat', sans-serif;
+          color: #333333;
+          background-color: #F5F5F5;
+      }
+      h1, h2, h3, h4, h5, h6 {
+          font-family: 'Playfair Display', serif;
+      }
+      .hero-section {
+          background-image: linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.1) 100%), url('https://readdy.ai/api/search-image?query=luxury%20car%20showroom%20with%20modern%20interior%20design%2C%20high-end%20luxury%20cars%20displayed%2C%20elegant%20lighting%2C%20marble%20floors%2C%20minimalist%20architecture%2C%20wide%20open%20space%2C%20glass%20walls%2C%20professional%20photography%2C%20high%20resolution%2C%20photorealistic%2C%20automotive%20photography&width=1920&height=1080&seq=hero1&orientation=landscape');
+          background-size: cover;
+          background-position: center;
+      }
+      .nav-link {
+          position: relative;
+      }
+      .nav-link::after {
+          content: '';
+          position: absolute;
+          width: 0;
+          height: 2px;
+          bottom: -4px;
+          left: 0;
+          background-color: #C0A080;
+          transition: width 0.3s;
+      }
+      .nav-link:hover::after {
+          width: 100%;
+      }
+      .car-card {
+          transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .car-card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      }
+      input, textarea {
+          outline: none;
+      }
+      input:focus, textarea:focus {
+          border-color: #C0A080;
+      }
+      .custom-checkbox {
+          appearance: none;
+          -webkit-appearance: none;
+          width: 20px;
+          height: 20px;
+          border: 2px solid #C0A080;
+          border-radius: 4px;
+          outline: none;
+          cursor: pointer;
+          position: relative;
+      }
+      .custom-checkbox:checked {
+          background-color: #C0A080;
+      }
+      .custom-checkbox:checked::after {
+          content: '';
+          position: absolute;
+          top: 2px;
+          left: 6px;
+          width: 5px;
+          height: 10px;
+          border: solid white;
+          border-width: 0 2px 2px 0;
+          transform: rotate(45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Navigation -->
+    <header
+      class="fixed w-full z-50 bg-gradient-to-b from-black/50 to-transparent"
+    >
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+          <div class="text-3xl font-['Pacifico'] text-white">
+            RND Luxury Cars
+          </div>
+
+          <nav class="hidden md:flex items-center space-x-8">
+            <a
+              href="#"
+              class="nav-link text-white hover:text-primary transition-colors"
+              >Beranda</a
+            >
+            <a
+              href="#collections"
+              class="nav-link text-white hover:text-primary transition-colors"
+              >Koleksi</a
+            >
+            <a
+              href="#services"
+              class="nav-link text-white hover:text-primary transition-colors"
+              >Layanan</a
+            >
+            <a
+              href="#about"
+              class="nav-link text-white hover:text-primary transition-colors"
+              >Tentang Kami</a
+            >
+            <a
+              href="#contact"
+              class="nav-link text-white hover:text-primary transition-colors"
+              >Kontak</a
+            >
+          </nav>
+
+          <button
+            class="bg-primary text-white px-6 py-2 !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors"
+          >
+            Buat Janji
+          </button>
+
+          <div
+            class="md:hidden w-10 h-10 flex items-center justify-center text-white"
+          >
+            <i class="ri-menu-line ri-2x"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section h-screen flex items-center">
+      <div class="container mx-auto px-6">
+        <div class="max-w-2xl">
+          <h1
+            class="text-5xl md:text-6xl font-bold text-white leading-tight mb-4"
+          >
+            Rasakan Kemewahan di Tingkat Tertinggi
+          </h1>
+          <p class="text-xl text-white/90 mb-8">
+            Dealer Mobil Premium di Indonesia
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <button
+              class="bg-primary text-white px-8 py-3 !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors"
+            >
+              Jelajahi Koleksi
+            </button>
+            <button
+              class="bg-white/10 backdrop-blur-sm text-white border border-white/30 px-8 py-3 !rounded-button whitespace-nowrap hover:bg-white/20 transition-colors"
+            >
+              Jadwalkan Test Drive
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Vehicles -->
+    <section id="collections" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4">Kendaraan Unggulan</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Koleksi mobil mewah terbaik kami yang dipilih dengan teliti untuk
+            memenuhi standar tertinggi kemewahan dan performa.
+          </p>
+        </div>
+
+        <div class="flex justify-center mb-10">
+          <div class="inline-flex bg-gray-100 p-1 rounded-full">
+            <button
+              class="px-6 py-2 rounded-full bg-primary text-white !rounded-button whitespace-nowrap"
+            >
+              Semua
+            </button>
+            <button
+              class="px-6 py-2 rounded-full text-gray-700 hover:bg-gray-200 !rounded-button whitespace-nowrap"
+            >
+              Sedan
+            </button>
+            <button
+              class="px-6 py-2 rounded-full text-gray-700 hover:bg-gray-200 !rounded-button whitespace-nowrap"
+            >
+              SUV
+            </button>
+            <button
+              class="px-6 py-2 rounded-full text-gray-700 hover:bg-gray-200 !rounded-button whitespace-nowrap"
+            >
+              Sport
+            </button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Car Card 1 -->
+          <div class="car-card bg-white rounded shadow-lg overflow-hidden">
+            <div class="h-64 overflow-hidden">
+              <img
+                src="https://readdy.ai/api/search-image?query=luxury%20Mercedes-Benz%20S-Class%20sedan%20in%20metallic%20silver%20color%2C%20professional%20automotive%20photography%2C%20studio%20lighting%2C%20minimalist%20background%2C%20high%20resolution%2C%20detailed%20exterior%20view%2C%20elegant%20design%20features&width=600&height=400&seq=car1&orientation=landscape"
+                alt="Mercedes-Benz S-Class"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Mercedes-Benz S-Class</h3>
+              <p class="text-primary font-semibold mb-3">Rp 2.850.000.000</p>
+              <div class="flex justify-between text-sm text-gray-600 mb-4">
+                <span class="flex items-center gap-1"
+                  ><i class="ri-dashboard-3-line"></i> 4.0L V8</span
+                >
+                <span class="flex items-center gap-1"
+                  ><i class="ri-speed-up-line"></i> 503 HP</span
+                >
+                <span class="flex items-center gap-1"
+                  ><i class="ri-timer-line"></i> 4.4s 0-100</span
+                >
+              </div>
+              <button
+                class="w-full bg-gray-100 text-secondary py-2 !rounded-button whitespace-nowrap hover:bg-gray-200 transition-colors"
+              >
+                Lihat Detail
+              </button>
+            </div>
+          </div>
+
+          <!-- Car Card 2 -->
+          <div class="car-card bg-white rounded shadow-lg overflow-hidden">
+            <div class="h-64 overflow-hidden">
+              <img
+                src="https://readdy.ai/api/search-image?query=luxury%20BMW%20X7%20SUV%20in%20deep%20blue%20color%2C%20professional%20automotive%20photography%2C%20studio%20lighting%2C%20minimalist%20background%2C%20high%20resolution%2C%20detailed%20exterior%20view%2C%20elegant%20design%20features%2C%20front%20angle&width=600&height=400&seq=car2&orientation=landscape"
+                alt="BMW X7"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">BMW X7</h3>
+              <p class="text-primary font-semibold mb-3">Rp 2.650.000.000</p>
+              <div class="flex justify-between text-sm text-gray-600 mb-4">
+                <span class="flex items-center gap-1"
+                  ><i class="ri-dashboard-3-line"></i> 3.0L I6</span
+                >
+                <span class="flex items-center gap-1"
+                  ><i class="ri-speed-up-line"></i> 375 HP</span
+                >
+                <span class="flex items-center gap-1"
+                  ><i class="ri-timer-line"></i> 5.8s 0-100</span
+                >
+              </div>
+              <button
+                class="w-full bg-gray-100 text-secondary py-2 !rounded-button whitespace-nowrap hover:bg-gray-200 transition-colors"
+              >
+                Lihat Detail
+              </button>
+            </div>
+          </div>
+
+          <!-- Car Card 3 -->
+          <div class="car-card bg-white rounded shadow-lg overflow-hidden">
+            <div class="h-64 overflow-hidden">
+              <img
+                src="https://readdy.ai/api/search-image?query=luxury%20Porsche%20911%20sports%20car%20in%20bright%20red%20color%2C%20professional%20automotive%20photography%2C%20studio%20lighting%2C%20minimalist%20background%2C%20high%20resolution%2C%20detailed%20exterior%20view%2C%20elegant%20design%20features%2C%20side%20angle&width=600&height=400&seq=car3&orientation=landscape"
+                alt="Porsche 911"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Porsche 911</h3>
+              <p class="text-primary font-semibold mb-3">Rp 3.750.000.000</p>
+              <div class="flex justify-between text-sm text-gray-600 mb-4">
+                <span class="flex items-center gap-1"
+                  ><i class="ri-dashboard-3-line"></i> 3.0L Flat-6</span
+                >
+                <span class="flex items-center gap-1"
+                  ><i class="ri-speed-up-line"></i> 443 HP</span
+                >
+                <span class="flex items-center gap-1"
+                  ><i class="ri-timer-line"></i> 3.7s 0-100</span
+                >
+              </div>
+              <button
+                class="w-full bg-gray-100 text-secondary py-2 !rounded-button whitespace-nowrap hover:bg-gray-200 transition-colors"
+              >
+                Lihat Detail
+              </button>
+            </div>
+          </div>
+
+          <!-- Car Card 4 -->
+          <div class="car-card bg-white rounded shadow-lg overflow-hidden">
+            <div class="h-64 overflow-hidden">
+              <img
+                src="https://readdy.ai/api/search-image?query=luxury%20Audi%20e-tron%20GT%20electric%20car%20in%20metallic%20gray%20color%2C%20professional%20automotive%20photography%2C%20studio%20lighting%2C%20minimalist%20background%2C%20high%20resolution%2C%20detailed%20exterior%20view%2C%20elegant%20design%20features%2C%20front%20angle&width=600&height=400&seq=car4&orientation=landscape"
+                alt="Audi e-tron GT"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Audi e-tron GT</h3>
+              <p class="text-primary font-semibold mb-3">Rp 3.150.000.000</p>
+              <div class="flex justify-between text-sm text-gray-600 mb-4">
+                <span class="flex items-center gap-1"
+                  ><i class="ri-battery-charge-line"></i> Electric</span
+                >
+                <span class="flex items-center gap-1"
+                  ><i class="ri-speed-up-line"></i> 522 HP</span
+                >
+                <span class="flex items-center gap-1"
+                  ><i class="ri-timer-line"></i> 3.9s 0-100</span
+                >
+              </div>
+              <button
+                class="w-full bg-gray-100 text-secondary py-2 !rounded-button whitespace-nowrap hover:bg-gray-200 transition-colors"
+              >
+                Lihat Detail
+              </button>
+            </div>
+          </div>
+
+          <!-- Car Card 5 -->
+          <div class="car-card bg-white rounded shadow-lg overflow-hidden">
+            <div class="h-64 overflow-hidden">
+              <img
+                src="https://readdy.ai/api/search-image?query=luxury%20Range%20Rover%20SUV%20in%20white%20color%2C%20professional%20automotive%20photography%2C%20studio%20lighting%2C%20minimalist%20background%2C%20high%20resolution%2C%20detailed%20exterior%20view%2C%20elegant%20design%20features%2C%20front%20angle&width=600&height=400&seq=car5&orientation=landscape"
+                alt="Range Rover"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Range Rover Autobiography</h3>
+              <p class="text-primary font-semibold mb-3">Rp 3.950.000.000</p>
+              <div class="flex justify-between text-sm text-gray-600 mb-4">
+                <span class="flex items-center gap-1"
+                  ><i class="ri-dashboard-3-line"></i> 5.0L V8</span
+                >
+                <span class="flex items-center gap-1"
+                  ><i class="ri-speed-up-line"></i> 518 HP</span
+                >
+                <span class="flex items-center gap-1"
+                  ><i class="ri-timer-line"></i> 5.1s 0-100</span
+                >
+              </div>
+              <button
+                class="w-full bg-gray-100 text-secondary py-2 !rounded-button whitespace-nowrap hover:bg-gray-200 transition-colors"
+              >
+                Lihat Detail
+              </button>
+            </div>
+          </div>
+
+          <!-- Car Card 6 -->
+          <div class="car-card bg-white rounded shadow-lg overflow-hidden">
+            <div class="h-64 overflow-hidden">
+              <img
+                src="https://readdy.ai/api/search-image?query=luxury%20Bentley%20Continental%20GT%20in%20dark%20green%20color%2C%20professional%20automotive%20photography%2C%20studio%20lighting%2C%20minimalist%20background%2C%20high%20resolution%2C%20detailed%20exterior%20view%2C%20elegant%20design%20features%2C%20front%20angle&width=600&height=400&seq=car6&orientation=landscape"
+                alt="Bentley Continental GT"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Bentley Continental GT</h3>
+              <p class="text-primary font-semibold mb-3">Rp 5.250.000.000</p>
+              <div class="flex justify-between text-sm text-gray-600 mb-4">
+                <span class="flex items-center gap-1"
+                  ><i class="ri-dashboard-3-line"></i> 6.0L W12</span
+                >
+                <span class="flex items-center gap-1"
+                  ><i class="ri-speed-up-line"></i> 626 HP</span
+                >
+                <span class="flex items-center gap-1"
+                  ><i class="ri-timer-line"></i> 3.6s 0-100</span
+                >
+              </div>
+              <button
+                class="w-full bg-gray-100 text-secondary py-2 !rounded-button whitespace-nowrap hover:bg-gray-200 transition-colors"
+              >
+                Lihat Detail
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-12">
+          <button
+            class="bg-primary text-white px-8 py-3 !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors"
+          >
+            Lihat Semua Koleksi
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="services" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4">Mengapa Memilih Kami</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Kami menawarkan pengalaman dealer mobil mewah yang tak tertandingi
+            dengan layanan premium dan koleksi eksklusif.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Feature 1 -->
+          <div class="bg-white p-8 rounded-lg shadow-md text-center">
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="ri-trophy-line ri-xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Seleksi Premium</h3>
+            <p class="text-gray-600">
+              Koleksi mobil mewah terbaik yang dipilih dengan teliti untuk
+              memenuhi standar tertinggi.
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="bg-white p-8 rounded-lg shadow-md text-center">
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="ri-user-star-line ri-xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Konsultasi Ahli</h3>
+            <p class="text-gray-600">
+              Tim spesialis kami siap membantu Anda menemukan kendaraan sempurna
+              sesuai kebutuhan.
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="bg-white p-8 rounded-lg shadow-md text-center">
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="ri-vip-crown-line ri-xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Pengalaman Mewah</h3>
+            <p class="text-gray-600">
+              Nikmati pengalaman pembelian yang eksklusif di showroom kami yang
+              elegan.
+            </p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="bg-white p-8 rounded-lg shadow-md text-center">
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="ri-customer-service-line ri-xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Layanan Purna Jual</h3>
+            <p class="text-gray-600">
+              Dukungan komprehensif dan perawatan berkualitas tinggi untuk
+              kendaraan Anda.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest Arrivals -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4">Kedatangan Terbaru</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Jelajahi koleksi terbaru kami yang baru saja tiba di showroom.
+          </p>
+        </div>
+        <div class="relative">
+          <div class="flex overflow-x-auto pb-8 gap-6 hide-scrollbar">
+            <!-- New Arrival 1 -->
+            <div
+              class="car-card bg-white rounded-lg shadow-lg overflow-hidden min-w-[350px] flex-shrink-0"
+            >
+              <div class="relative h-64 overflow-hidden">
+                <img
+                  src="https://readdy.ai/api/search-image?query=luxury%20Ferrari%20Roma%20in%20bright%20red%20color%2C%20professional%20automotive%20photography%2C%20studio%20lighting%2C%20minimalist%20background%2C%20high%20resolution%2C%20detailed%20exterior%20view%2C%20elegant%20design%20features%2C%20front%20angle&width=600&height=400&seq=new1&orientation=landscape"
+                  alt="Ferrari Roma"
+                  class="w-full h-full object-cover object-top"
+                />
+                <div
+                  class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold"
+                >
+                  Baru Datang
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2">Ferrari Roma</h3>
+                <p class="text-primary font-semibold mb-3">Rp 7.850.000.000</p>
+                <div class="flex justify-between text-sm text-gray-600 mb-4">
+                  <span class="flex items-center gap-1"
+                    ><i class="ri-dashboard-3-line"></i> 3.9L V8</span
+                  >
+                  <span class="flex items-center gap-1"
+                    ><i class="ri-speed-up-line"></i> 612 HP</span
+                  >
+                  <span class="flex items-center gap-1"
+                    ><i class="ri-timer-line"></i> 3.4s 0-100</span
+                  >
+                </div>
+                <button
+                  class="w-full bg-gray-100 text-secondary py-2 !rounded-button whitespace-nowrap hover:bg-gray-200 transition-colors"
+                >
+                  Lihat Detail
+                </button>
+              </div>
+            </div>
+
+            <!-- New Arrival 2 -->
+            <div
+              class="car-card bg-white rounded-lg shadow-lg overflow-hidden min-w-[350px] flex-shrink-0"
+            >
+              <div class="relative h-64 overflow-hidden">
+                <img
+                  src="https://readdy.ai/api/search-image?query=luxury%20Lamborghini%20Huracan%20STO%20in%20bright%20blue%20color%2C%20professional%20automotive%20photography%2C%20studio%20lighting%2C%20minimalist%20background%2C%20high%20resolution%2C%20detailed%20exterior%20view%2C%20elegant%20design%20features%2C%20front%20angle&width=600&height=400&seq=new2&orientation=landscape"
+                  alt="Lamborghini Huracan STO"
+                  class="w-full h-full object-cover object-top"
+                />
+                <div
+                  class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold"
+                >
+                  Baru Datang
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2">Lamborghini Huracan STO</h3>
+                <p class="text-primary font-semibold mb-3">Rp 9.250.000.000</p>
+                <div class="flex justify-between text-sm text-gray-600 mb-4">
+                  <span class="flex items-center gap-1"
+                    ><i class="ri-dashboard-3-line"></i> 5.2L V10</span
+                  >
+                  <span class="flex items-center gap-1"
+                    ><i class="ri-speed-up-line"></i> 631 HP</span
+                  >
+                  <span class="flex items-center gap-1"
+                    ><i class="ri-timer-line"></i> 3.0s 0-100</span
+                  >
+                </div>
+                <button
+                  class="w-full bg-gray-100 text-secondary py-2 !rounded-button whitespace-nowrap hover:bg-gray-200 transition-colors"
+                >
+                  Lihat Detail
+                </button>
+              </div>
+            </div>
+
+            <!-- New Arrival 3 -->
+            <div
+              class="car-card bg-white rounded-lg shadow-lg overflow-hidden min-w-[350px] flex-shrink-0"
+            >
+              <div class="relative h-64 overflow-hidden">
+                <img
+                  src="https://readdy.ai/api/search-image?query=luxury%20Rolls-Royce%20Ghost%20in%20pearl%20white%20color%2C%20professional%20automotive%20photography%2C%20studio%20lighting%2C%20minimalist%20background%2C%20high%20resolution%2C%20detailed%20exterior%20view%2C%20elegant%20design%20features%2C%20front%20angle&width=600&height=400&seq=new3&orientation=landscape"
+                  alt="Rolls-Royce Ghost"
+                  class="w-full h-full object-cover object-top"
+                />
+                <div
+                  class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold"
+                >
+                  Baru Datang
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2">Rolls-Royce Ghost</h3>
+                <p class="text-primary font-semibold mb-3">Rp 12.500.000.000</p>
+                <div class="flex justify-between text-sm text-gray-600 mb-4">
+                  <span class="flex items-center gap-1"
+                    ><i class="ri-dashboard-3-line"></i> 6.75L V12</span
+                  >
+                  <span class="flex items-center gap-1"
+                    ><i class="ri-speed-up-line"></i> 563 HP</span
+                  >
+                  <span class="flex items-center gap-1"
+                    ><i class="ri-timer-line"></i> 4.8s 0-100</span
+                  >
+                </div>
+                <button
+                  class="w-full bg-gray-100 text-secondary py-2 !rounded-button whitespace-nowrap hover:bg-gray-200 transition-colors"
+                >
+                  Lihat Detail
+                </button>
+              </div>
+            </div>
+
+            <!-- New Arrival 4 -->
+            <div
+              class="car-card bg-white rounded-lg shadow-lg overflow-hidden min-w-[350px] flex-shrink-0"
+            >
+              <div class="relative h-64 overflow-hidden">
+                <img
+                  src="https://readdy.ai/api/search-image?query=luxury%20Aston%20Martin%20DBS%20Superleggera%20in%20dark%20green%20color%2C%20professional%20automotive%20photography%2C%20studio%20lighting%2C%20minimalist%20background%2C%20high%20resolution%2C%20detailed%20exterior%20view%2C%20elegant%20design%20features%2C%20front%20angle&width=600&height=400&seq=new4&orientation=landscape"
+                  alt="Aston Martin DBS"
+                  class="w-full h-full object-cover object-top"
+                />
+                <div
+                  class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold"
+                >
+                  Baru Datang
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2">Aston Martin DBS</h3>
+                <p class="text-primary font-semibold mb-3">Rp 8.950.000.000</p>
+                <div class="flex justify-between text-sm text-gray-600 mb-4">
+                  <span class="flex items-center gap-1"
+                    ><i class="ri-dashboard-3-line"></i> 5.2L V12</span
+                  >
+                  <span class="flex items-center gap-1"
+                    ><i class="ri-speed-up-line"></i> 715 HP</span
+                  >
+                  <span class="flex items-center gap-1"
+                    ><i class="ri-timer-line"></i> 3.4s 0-100</span
+                  >
+                </div>
+                <button
+                  class="w-full bg-gray-100 text-secondary py-2 !rounded-button whitespace-nowrap hover:bg-gray-200 transition-colors"
+                >
+                  Lihat Detail
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center text-primary hover:bg-gray-100 transition-colors z-10 hidden md:flex"
+          >
+            <i class="ri-arrow-left-s-line ri-xl"></i>
+          </button>
+
+          <button
+            class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center text-primary hover:bg-gray-100 transition-colors z-10 hidden md:flex"
+          >
+            <i class="ri-arrow-right-s-line ri-xl"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4">Hubungi Kami</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Jadwalkan kunjungan atau konsultasi dengan tim spesialis kami untuk
+            menemukan mobil impian Anda.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <!-- Contact Form -->
+          <div class="bg-white p-8 rounded-lg shadow-md">
+            <h3 class="text-2xl font-bold mb-6">Kirim Pesan</h3>
+            <form>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div>
+                  <label
+                    for="name"
+                    class="block text-sm font-medium text-gray-700 mb-2"
+                    >Nama Lengkap</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+                    placeholder="Masukkan nama lengkap"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="email"
+                    class="block text-sm font-medium text-gray-700 mb-2"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+                    placeholder="Masukkan alamat email"
+                  />
+                </div>
+              </div>
+              <div class="mb-6">
+                <label
+                  for="phone"
+                  class="block text-sm font-medium text-gray-700 mb-2"
+                  >Nomor Telepon</label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+                  placeholder="Masukkan nomor telepon"
+                />
+              </div>
+              <div class="mb-6">
+                <label
+                  for="interest"
+                  class="block text-sm font-medium text-gray-700 mb-2"
+                  >Tertarik Pada</label
+                >
+                <div class="relative">
+                  <select
+                    id="interest"
+                    class="w-full px-4 py-3 border border-gray-300 rounded appearance-none focus:border-primary pr-8"
+                  >
+                    <option value="" disabled selected>
+                      Pilih model yang diminati
+                    </option>
+                    <option value="mercedes">Mercedes-Benz S-Class</option>
+                    <option value="bmw">BMW X7</option>
+                    <option value="porsche">Porsche 911</option>
+                    <option value="audi">Audi e-tron GT</option>
+                    <option value="range">Range Rover Autobiography</option>
+                    <option value="bentley">Bentley Continental GT</option>
+                    <option value="other">Lainnya</option>
+                  </select>
+                  <div
+                    class="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none"
+                  >
+                    <i class="ri-arrow-down-s-line text-gray-500"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-6">
+                <label
+                  for="message"
+                  class="block text-sm font-medium text-gray-700 mb-2"
+                  >Pesan</label
+                >
+                <textarea
+                  id="message"
+                  rows="4"
+                  class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+                  placeholder="Tuliskan pesan atau pertanyaan Anda"
+                ></textarea>
+              </div>
+              <div class="flex items-center mb-6">
+                <input
+                  type="checkbox"
+                  id="consent"
+                  class="custom-checkbox mr-3"
+                />
+                <label for="consent" class="text-sm text-gray-600"
+                  >Saya setuju untuk dihubungi oleh RND Luxury Cars mengenai
+                  penawaran dan informasi terkait.</label
+                >
+              </div>
+              <button
+                type="submit"
+                class="w-full bg-primary text-white py-3 !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors"
+              >
+                Kirim Pesan
+              </button>
+            </form>
+          </div>
+
+          <!-- Map and Contact Info -->
+          <div>
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden mb-8 h-80"
+            >
+              <img
+                src="https://public.readdy.ai/gen_page/map_placeholder_1280x720.png"
+                alt="Lokasi RND Luxury Cars"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-md">
+              <h3 class="text-2xl font-bold mb-6">Informasi Kontak</h3>
+              <div class="space-y-4">
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full text-primary flex-shrink-0"
+                  >
+                    <i class="ri-map-pin-line"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold mb-1">Alamat</h4>
+                    <p class="text-gray-600">
+                      Jl. Sudirman No. 123, Kawasan SCBD, Jakarta Selatan, 12190
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full text-primary flex-shrink-0"
+                  >
+                    <i class="ri-phone-line"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold mb-1">Telepon</h4>
+                    <p class="text-gray-600">+62 21 5678 9012</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full text-primary flex-shrink-0"
+                  >
+                    <i class="ri-mail-line"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold mb-1">Email</h4>
+                    <p class="text-gray-600">info@rndluxurycars.com</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full text-primary flex-shrink-0"
+                  >
+                    <i class="ri-time-line"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold mb-1">Jam Operasional</h4>
+                    <p class="text-gray-600">Senin - Jumat: 09:00 - 18:00</p>
+                    <p class="text-gray-600">Sabtu: 10:00 - 16:00</p>
+                    <p class="text-gray-600">Minggu: Dengan Janji</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white pt-16 pb-6">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <!-- Company Info -->
+          <div>
+            <div class="text-3xl font-['Pacifico'] text-white mb-6">
+              RND Luxury Cars
+            </div>
+            <p class="text-gray-300 mb-6">
+              Dealer mobil mewah terkemuka di Indonesia dengan koleksi eksklusif
+              dan layanan premium.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-white/10 rounded-full hover:bg-primary transition-colors"
+              >
+                <i class="ri-facebook-fill text-white"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-white/10 rounded-full hover:bg-primary transition-colors"
+              >
+                <i class="ri-instagram-line text-white"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-white/10 rounded-full hover:bg-primary transition-colors"
+              >
+                <i class="ri-twitter-x-line text-white"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-white/10 rounded-full hover:bg-primary transition-colors"
+              >
+                <i class="ri-youtube-line text-white"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Quick Links -->
+          <div>
+            <h3 class="text-lg font-bold mb-6">Tautan Cepat</h3>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-primary transition-colors"
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#collections"
+                  class="text-gray-300 hover:text-primary transition-colors"
+                  >Koleksi Kami</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="text-gray-300 hover:text-primary transition-colors"
+                  >Layanan</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-primary transition-colors"
+                  >Tentang Kami</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-gray-300 hover:text-primary transition-colors"
+                  >Kontak</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-primary transition-colors"
+                  >Karir</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div>
+            <h3 class="text-lg font-bold mb-6">Layanan Kami</h3>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-primary transition-colors"
+                  >Pembelian Mobil Baru</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-primary transition-colors"
+                  >Pembelian Mobil Bekas</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-primary transition-colors"
+                  >Pembiayaan & Leasing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-primary transition-colors"
+                  >Asuransi</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-primary transition-colors"
+                  >Perawatan & Servis</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-primary transition-colors"
+                  >Suku Cadang Asli</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Newsletter -->
+          <div>
+            <h3 class="text-lg font-bold mb-6">Berlangganan Newsletter</h3>
+            <p class="text-gray-300 mb-4">
+              Dapatkan informasi terbaru tentang koleksi dan penawaran eksklusif
+              kami.
+            </p>
+            <form class="mb-4">
+              <div class="flex">
+                <input
+                  type="email"
+                  placeholder="Alamat email Anda"
+                  class="px-4 py-3 w-full rounded-l border-none text-gray-800"
+                />
+                <button
+                  type="submit"
+                  class="bg-primary text-white px-4 py-3 rounded-r !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors"
+                >
+                  Langganan
+                </button>
+              </div>
+            </form>
+            <div class="flex items-center space-x-3">
+              <span class="text-gray-300">Metode Pembayaran:</span>
+              <div class="flex space-x-2">
+                <i class="ri-visa-fill ri-lg"></i>
+                <i class="ri-mastercard-fill ri-lg"></i>
+                <i class="ri-paypal-fill ri-lg"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-700 pt-6">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-400 text-sm mb-4 md:mb-0">
+              © 2025 RND Luxury Cars. Hak Cipta Dilindungi.
+            </p>
+            <div class="flex space-x-6">
+              <a
+                href="#"
+                class="text-gray-400 text-sm hover:text-primary transition-colors"
+                >Kebijakan Privasi</a
+              >
+              <a
+                href="#"
+                class="text-gray-400 text-sm hover:text-primary transition-colors"
+                >Syarat & Ketentuan</a
+              >
+              <a
+                href="#"
+                class="text-gray-400 text-sm hover:text-primary transition-colors"
+                >Peta Situs</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script id="navigationScript">
+      document.addEventListener("DOMContentLoaded", function () {
+        const header = document.querySelector("header");
+
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > 50) {
+            header.classList.remove(
+              "bg-gradient-to-b",
+              "from-black/50",
+              "to-transparent",
+            );
+            header.classList.add("bg-secondary");
+          } else {
+            header.classList.add(
+              "bg-gradient-to-b",
+              "from-black/50",
+              "to-transparent",
+            );
+            header.classList.remove("bg-secondary");
+          }
+        });
+      });
+    </script>
+
+    <script id="carouselScript">
+      document.addEventListener("DOMContentLoaded", function () {
+        const carousel = document.querySelector(".overflow-x-auto");
+        const prevButton = carousel.parentElement.querySelector(
+          ".ri-arrow-left-s-line",
+        ).parentElement;
+        const nextButton = carousel.parentElement.querySelector(
+          ".ri-arrow-right-s-line",
+        ).parentElement;
+
+        nextButton.addEventListener("click", function () {
+          carousel.scrollBy({
+            left: 380,
+            behavior: "smooth",
+          });
+        });
+
+        prevButton.addEventListener("click", function () {
+          carousel.scrollBy({
+            left: -380,
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+
+    <script id="formValidationScript">
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.querySelector("form");
+
+        if (form) {
+          form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const name = document.getElementById("name");
+            const email = document.getElementById("email");
+            const phone = document.getElementById("phone");
+            const message = document.getElementById("message");
+            const consent = document.getElementById("consent");
+
+            let isValid = true;
+
+            if (!name.value.trim()) {
+              name.classList.add("border-red-500");
+              isValid = false;
+            } else {
+              name.classList.remove("border-red-500");
+            }
+
+            if (!email.value.trim() || !email.value.includes("@")) {
+              email.classList.add("border-red-500");
+              isValid = false;
+            } else {
+              email.classList.remove("border-red-500");
+            }
+
+            if (!phone.value.trim()) {
+              phone.classList.add("border-red-500");
+              isValid = false;
+            } else {
+              phone.classList.remove("border-red-500");
+            }
+
+            if (!message.value.trim()) {
+              message.classList.add("border-red-500");
+              isValid = false;
+            } else {
+              message.classList.remove("border-red-500");
+            }
+
+            if (!consent.checked) {
+              consent.classList.add("border-red-500");
+              isValid = false;
+            } else {
+              consent.classList.remove("border-red-500");
+            }
+
+            if (isValid) {
+              alert(
+                "Terima kasih! Pesan Anda telah terkirim. Tim kami akan segera menghubungi Anda.",
+              );
+              form.reset();
+            }
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
